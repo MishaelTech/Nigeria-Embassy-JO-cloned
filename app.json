@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "nigeria_react_native_app",
-    "slug": "nigeria_react_native_app",
+    "name": "Nigeria Embassy",
+    "slug": "nigeria_embassy_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "nigeriaembassy",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
