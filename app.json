@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.mst.nigeriaembassy"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/nigeria.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mst.nigeriaembassy"
     },
     "web": {
       "bundler": "metro",

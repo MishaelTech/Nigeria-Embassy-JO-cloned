@@ -1,11 +1,13 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 
 const Gallery = () => {
     return (
-        <View>
-            <Text>Gallery</Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Text>Gallery</Text>
+            </View>
+        </SafeAreaView>
     )
 }
 
