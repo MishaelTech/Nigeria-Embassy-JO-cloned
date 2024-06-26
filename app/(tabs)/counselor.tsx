@@ -19,7 +19,7 @@ const Consular = () => {
                         />
                     </TouchableOpacity>
 
-                    <Text style={styles.headerText} className="font-pbold">Consular Office of</Text>
+                    <Text style={styles.headerText} className="font-pbold uppercase">Consular Office of</Text>
                     <Image source={images.logo} className="w-10 h-10" />
                 </View>
                 <View style={styles.centeredText}>

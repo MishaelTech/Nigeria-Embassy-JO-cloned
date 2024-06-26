@@ -37,7 +37,7 @@ const TabsLayout = () => {
                     tabBarActiveTintColor: '#77DD77',
                     tabBarInactiveTintColor: '#CDCDE0',
                     tabBarStyle: {
-                        backgroundColor: '#161622',
+                        backgroundColor: '#1D2E28',
                         borderTopWidth: 1,
                         borderTopColor: '#232533',
                         height: 84,
@@ -102,6 +102,22 @@ const TabsLayout = () => {
                                 icon={icons.bookmark}
                                 color={color}
                                 name="Ambassador"
+                                focused={focused}
+                            />
+                        )
+                    }}
+                />
+
+                <Tabs.Screen
+                    name="gallery"
+                    options={{
+                        title: "Gallery",
+                        headerShown: false,
+                        tabBarIcon: ({ color, focused }) => (
+                            <TabIcon
+                                icon={icons.bookmark}
+                                color={color}
+                                name="Gallery"
                                 focused={focused}
                             />
                         )

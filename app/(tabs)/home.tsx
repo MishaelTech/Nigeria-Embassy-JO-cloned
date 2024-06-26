@@ -1,5 +1,6 @@
 import ButtonGroup from "@/components/Button";
 import CustomButton from "@/components/CustomButton";
+import { HelloWave } from "@/components/HelloWave";
 import { icons, images } from "@/constants";
 import { useGlobalContext } from "@/hooks/useGlobalContext";
 import { router, useNavigation } from "expo-router";
@@ -20,7 +21,7 @@ const Home: React.FC = () => {
     };
 
     const goToHome = () => {
-        router.push('/map'); // Replace 'Home' with the actual screen name for your Home component
+        router.replace('/map'); // Replace 'Home' with the actual screen name for your Home component
     };
 
     const goToGallery = () => {
@@ -88,7 +89,7 @@ const Home: React.FC = () => {
             >
                 <View className="flex flex-1 px-5 pb-28 top-5">
                     <Text className="font-semibold text-2xl text-gray-900">
-                        Welcome Back, <Text className="text-green-800">{user?.fullname}!</Text>
+                        Welcome Back, <Text className="text-green-800">{user?.fullname}!<HelloWave /></Text>
                     </Text>
                     <Text className="text-sm font-pregular text-gray-900">
                         We are delighted to welcome you into the Federal Republic of Nigeria, Amman, Jordan. Please contact us if needs be.
