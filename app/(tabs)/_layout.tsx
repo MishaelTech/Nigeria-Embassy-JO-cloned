@@ -2,6 +2,7 @@ import { View, Text, Image, ImageSourcePropType, StyleSheet } from 'react-native
 import { Tabs, Redirect } from 'expo-router'
 
 import { icons } from '../../constants'
+import { StatusBar } from 'expo-status-bar';
 
 interface TabIconProps {
     icon: ImageSourcePropType; // Assuming icons.home is of type ImageSourcePropType
@@ -60,15 +61,31 @@ const TabsLayout = () => {
                 />
 
                 <Tabs.Screen
-                    name="gallery"
+                    name="counselor"
                     options={{
-                        title: "Gallery",
+                        title: "Counselor",
+                        headerShown: false,
+                        tabBarIcon: ({ color, focused }) => (
+                            <TabIcon
+                                icon={icons.home}
+                                color={color}
+                                name="Counselor"
+                                focused={focused}
+                            />
+                        )
+                    }}
+                />
+
+                <Tabs.Screen
+                    name="tourism_trade"
+                    options={{
+                        title: "Tour",
                         headerShown: false,
                         tabBarIcon: ({ color, focused }) => (
                             <TabIcon
                                 icon={icons.profile}
                                 color={color}
-                                name="Gallery"
+                                name="Tour"
                                 focused={focused}
                             />
                         )
@@ -91,6 +108,8 @@ const TabsLayout = () => {
                     }}
                 />
             </Tabs>
+
+            <StatusBar backgroundColor="#161622" style="light" />
         </>
     )
 }

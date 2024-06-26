@@ -6,5 +6,8 @@ import logo from "../assets/images/nigeria.png";
 import logo2 from "../assets/images/logo2.png";
 import logoSmall from "../assets/images/logo-small.png";
 import empty from "../assets/images/empty.png";
+import affairs from "../assets/images/affairs.jpg";
+import tour from "../assets/images/tour.jpg";
+import refinery from "../assets/images/refinery.jpg";
 
-export default { profile, thumbnail, cards, path, logo, logo2, logoSmall, empty };
+export default { profile, thumbnail, cards, path, logo, logo2, logoSmall, empty, affairs, tour, refinery };
