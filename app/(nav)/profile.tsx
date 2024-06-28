@@ -74,7 +74,7 @@ const Profile = () => {
                 <View className="min-h-0 px-10">
                     <CustomButton
                         title="LogOut"
-                        handlePress={signOut}
+                        handlePress={logout}
                         containerStyles=" mt-4 min-h-[62px]"
                     />
                 </View>
