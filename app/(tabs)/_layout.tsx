@@ -1,4 +1,4 @@
-import { View, Text, Image, ImageSourcePropType, StyleSheet } from 'react-native'
+import { View, Text, Image, ImageSourcePropType, StyleSheet, TouchableOpacity } from 'react-native'
 import { Tabs, Redirect } from 'expo-router'
 
 import { icons } from '../../constants'
@@ -12,20 +12,23 @@ interface TabIconProps {
 }
 
 const TabIcon: React.FC<TabIconProps> = ({ icon, color, focused, name }) => {
+    // Determine the size for the tour tab icon
+    const isTourTab = name === "Tour";
+    const iconSize = isTourTab ? styles.largeImage : styles.image;
+
     return (
-        <View style={[styles.container]}>
+        <View style={styles.container}>
             <Image
                 source={icon}
                 resizeMode="contain"
                 tintColor={color}
-                style={styles.image}
+                style={iconSize}
             />
-
             <Text style={[styles.text, focused ? styles.fontSemibold : styles.fontRegular, styles.textSm, { color: color }]}>
                 {name}
             </Text>
         </View>
-    )
+    );
 }
 
 const TabsLayout = () => {
@@ -67,7 +70,7 @@ const TabsLayout = () => {
                         headerShown: false,
                         tabBarIcon: ({ color, focused }) => (
                             <TabIcon
-                                icon={icons.home}
+                                icon={icons.counselor}
                                 color={color}
                                 name="Counselor"
                                 focused={focused}
@@ -83,7 +86,7 @@ const TabsLayout = () => {
                         headerShown: false,
                         tabBarIcon: ({ color, focused }) => (
                             <TabIcon
-                                icon={icons.profile}
+                                icon={icons.tour}
                                 color={color}
                                 name="Tour"
                                 focused={focused}
@@ -99,7 +102,7 @@ const TabsLayout = () => {
                         headerShown: false,
                         tabBarIcon: ({ color, focused }) => (
                             <TabIcon
-                                icon={icons.bookmark}
+                                icon={icons.ambassador}
                                 color={color}
                                 name="Ambassador"
                                 focused={focused}
@@ -115,7 +118,7 @@ const TabsLayout = () => {
                         headerShown: false,
                         tabBarIcon: ({ color, focused }) => (
                             <TabIcon
-                                icon={icons.bookmark}
+                                icon={icons.gallery}
                                 color={color}
                                 name="Gallery"
                                 focused={focused}
@@ -140,7 +143,10 @@ const styles = StyleSheet.create({
         gap: 8, // Adjust gap value according to your design needs
 
     },
-
+    largeImage: {
+        width: 30, // Increase the size of the tour icon
+        height: 30,
+    },
 
     image: {
         width: 20, // Use a number without 'px'
@@ -149,6 +155,9 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 14, // Example font size
+    },
+    largeText: {
+        fontSize: 16, // Increase the size of the tour text
     },
     fontRegular: {
         fontFamily: 'Poppins-Regular', // Example regular font family

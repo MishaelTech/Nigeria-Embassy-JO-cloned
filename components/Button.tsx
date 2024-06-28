@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
     container: {
         marginHorizontal: 20,
         alignItems: 'center',
-        marginBottom: 5
     },
     buttonRow1: {
         flexDirection: 'row',
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
     buttonRow: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 15,
+        marginBottom: 2,
     },
     button1: {
         backgroundColor: 'white',
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
         color: 'gray',
         textAlign: 'center',
         fontSize: 15,
-        fontFamily: 'DMBold',
+        fontFamily: 'old',
         fontWeight: '900',
     },
 });

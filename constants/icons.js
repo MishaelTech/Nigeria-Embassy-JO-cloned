@@ -13,6 +13,12 @@ import eye from "../assets/icons/eye.png";
 import play from "../assets/icons/play.png";
 import left from "../assets/icons/left.png";
 import hamburger from "../assets/icons/hamburger.jpg";
+import ambassador from "../assets/icons/ambassador.png";
+import counselor from "../assets/icons/counselor.png";
+import gallery from "../assets/icons/gallery.png";
+import anthem from "../assets/icons/anthem.png";
+import map from "../assets/icons/map.png";
+import tour from "../assets/icons/tour.jpg";
 
 export default {
   play,
@@ -30,4 +36,10 @@ export default {
   eye,
   left,
   hamburger,
+  ambassador,
+  counselor,
+  gallery,
+  anthem,
+  map,
+  tour,
 };

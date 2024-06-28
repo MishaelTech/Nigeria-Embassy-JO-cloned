@@ -9,5 +9,6 @@ import empty from "../assets/images/empty.png";
 import affairs from "../assets/images/affairs.jpg";
 import tour from "../assets/images/tour.jpg";
 import refinery from "../assets/images/refinery.jpg";
+import flag from "../assets/images/flag.png";
 
-export default { profile, thumbnail, cards, path, logo, logo2, logoSmall, empty, affairs, tour, refinery };
+export default { profile, thumbnail, cards, path, logo, logo2, logoSmall, empty, affairs, tour, refinery, flag };

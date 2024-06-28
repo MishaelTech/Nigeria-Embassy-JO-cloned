@@ -13,7 +13,27 @@ const Layout = () => {
                     }}
                 />
                 <Stack.Screen
+                    name="anthem"
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
                     name="imagedetail"
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+                <Stack.Screen
+                    name="profile"
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+                <Stack.Screen
+                    name="website"
                     options={{
                         headerShown: false,
                     }}
