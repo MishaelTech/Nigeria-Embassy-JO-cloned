@@ -97,7 +97,7 @@ const GeminiChat: React.FC = () => {
         try {
             const prompt = isNigeriaRelated(userInput)
                 ? userInput
-                : `${userInput} with a focus on Nigeria giving detail answer`;
+                : `${userInput} with a detailed focus on Nigeria giving detail answer`;
             const text = await fetchResponse(prompt);
             setMessages((prevMessages) => [...prevMessages, { text, user: false }]);
             if (text && !isSpeaking) {
