@@ -35,16 +35,16 @@ const App = () => {
             <Text style={styles.text}>Visit the Nigeria Embassy today</Text>
             <Text style={styles.text2}>Amman, Jordan</Text>
 
-            <Image
+            {/* <Image
               source={images.path}
               style={styles.image_path}
               resizeMode='contain'
-            />
+            /> */}
           </View>
           <Text style={styles.text3}>
             {/* <HelloWave /> */}
             A place of peace and harmony:
-            Enjoy the excellent nature nigeria gives to its citizens
+            Enjoy the excellent nature nigeria give to its citizens
           </Text>
 
           <CustomButton

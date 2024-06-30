@@ -30,14 +30,13 @@ const Anthem = () => {
                             <View style={styles.a_flag}>
                                 <Image style={styles.a_flags} source={images.flag} />
                             </View>
-                            <Text style={styles.lyrics} className="font-pregular">Arise, O Compatriots</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Nigeria's call obey</Text>
-                            <Text style={styles.lyrics} className="font-pregular">To serve our fatherland</Text>
-                            <Text style={styles.lyrics} className="font-pregular">With love and strength and faith</Text>
-                            <Text style={styles.lyrics} className="font-pregular">The labour of our heroes past,</Text>
-                            <Text style={styles.lyrics} className="font-pregular">shall never be in vain</Text>
-                            <Text style={styles.lyrics} className="font-pregular">To serve with heart and might,</Text>
-                            <Text style={styles.lyrics} className="font-pregular">One nation bound in freedom, peace and unity.</Text>
+
+                            <Text style={styles.lyrics} className="font-pregular">Nigeria, we hail thee,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Our own dear native land,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Though tribes and tongues may differ</Text>
+                            <Text style={styles.lyrics} className="font-pregular">In brotherhood we stand,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Nigerians all, and proud to serve</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Our sovereign Motherland.</Text>
 
                             <Text style={{
                                 color: 'red',
@@ -45,14 +44,25 @@ const Anthem = () => {
                                 fontFamily: '',
                                 fontSize: 16,
                             }}>(ii)</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Oh God of creation,</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Direct our noble cause</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Guide thou our leaders right</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Help our youth the truth to know</Text>
-                            <Text style={styles.lyrics} className="font-pregular">In love and honesty to grow</Text>
-                            <Text style={styles.lyrics} className="font-pregular">And living just and true</Text>
-                            <Text style={styles.lyrics} className="font-pregular">Great lofty heights attain</Text>
-                            <Text style={styles.lyrics} className="font-pregular">To build a nation where peace and justice reign.</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Our flag shall be a symbol</Text>
+                            <Text style={styles.lyrics} className="font-pregular">That truth and justice reign,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">In peace or battle honour'd,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">And this we count as gain,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">To hand on to our children</Text>
+                            <Text style={styles.lyrics} className="font-pregular">A banner without stain.</Text>
+
+                            <Text style={{
+                                color: 'red',
+                                padding: 10,
+                                fontFamily: '',
+                                fontSize: 16,
+                            }}>(iii)</Text>
+                            <Text style={styles.lyrics} className="font-pregular">O God of all creation,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Grant this our one request.</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Help us to build a nation</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Where no man is oppressed,</Text>
+                            <Text style={styles.lyrics} className="font-pregular">And so with peace and plenty</Text>
+                            <Text style={styles.lyrics} className="font-pregular">Nigeria may be blessed.</Text>
                         </View>
                     </View>
                 </ScrollView>

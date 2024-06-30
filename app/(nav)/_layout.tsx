@@ -38,6 +38,13 @@ const Layout = () => {
                         headerShown: false,
                     }}
                 />
+
+                <Stack.Screen
+                    name="gemini"
+                    options={{
+                        headerShown: false,
+                    }}
+                />
             </Stack>
 
             {/* <StatusBar backgroundColor="#161622" style="light" /> */}

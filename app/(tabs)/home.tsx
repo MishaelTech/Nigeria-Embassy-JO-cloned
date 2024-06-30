@@ -37,6 +37,10 @@ const Home: React.FC = () => {
         router.navigate('/website'); // Replace 'Home' with the actual screen name for your Home component
     };
 
+    const gemini = () => {
+        router.navigate('/gemini'); // Replace 'Home' with the actual screen name for your Home component
+    };
+
     const opacity = useSharedValue(0);
 
     React.useEffect(() => {
@@ -141,6 +145,14 @@ const Home: React.FC = () => {
                     />
 
                     <ButtonGroup />
+                </View>
+
+                <View className="px-10 top-[-64]">
+                    <CustomButton
+                        title="Ask about Nigeria"
+                        handlePress={gemini}
+                        containerStyles=" mt-4 min-h-[62px]"
+                    />
                 </View>
 
                 <View className="px-10 top-[-64]">
